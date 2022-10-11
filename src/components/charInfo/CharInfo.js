@@ -4,6 +4,7 @@ import MarvelService from '../../services/MarvelService';
 import ErrorMessage from '../errorMessage/ErrorMessage';
 import Skeleton from '../skeleton/Skeleton';
 
+
 import './charInfo.scss';
 
 class CharInfo extends Component {
@@ -34,6 +35,7 @@ class CharInfo extends Component {
 		this.onCharLoading();
 
 		this.marvelService.getCharacter(charId).then(this.onCharLoaded).catch(this.onError);
+    
 	};
 
 	onCharLoaded = (char) => {
