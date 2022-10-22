@@ -3,7 +3,6 @@ class MarvelService {
 	_apiKey = 'apikey=cba949ffd82da5ecd5ad14d1b764d3db';
 	_baseOffset = 210;
 
-
 	getResource = async (url) => {
 		let res = await fetch(url);
 
